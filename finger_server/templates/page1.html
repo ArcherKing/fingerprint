@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+      
+        html {height: 100%;}
+        body {
+            background-image: url("https://photo69.macsc.com/180328/180328_17/Bc1FeXdAc1_small.jpg"); /*可變更背景來源*/
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            }
+
+        .container{
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            line-height:150px;
+                  }
+
+        .container1{
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            line-height:75px; 
+        } 
+
+    </style>
+
+      
+</head>
+<body >
+    <div class="container"><font size="6" color="black"><b>指紋辦識系統</b></font></div>
+
+    <div class="container">
+    <img src="../static/uploads/{{A}}" width="96" height="103"><br>
+    </div>
+
+    <div class="container1">
+        <b>{{B}}</b><br>
+    </div>
+
+    <div class="container">
+        <form  method="POST" class="container" enctype="multipart/form-data" >
+            <input type="file" name="filename" required>
+            <input type="submit" value="上傳">
+        </form>
+    </div>
+
+    <div class="container">
+        <br>
+        <form action="/page2" method="POST" class="container">
+            <button>開始鑑識</button>
+        </form>
+    </div>
+    
+
+
+</body>
+</html>
+
+
